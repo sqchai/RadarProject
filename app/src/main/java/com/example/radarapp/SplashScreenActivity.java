@@ -17,11 +17,12 @@ public class SplashScreenActivity extends AppCompatActivity {
         EasySplashScreen easySplashScreen = new EasySplashScreen(SplashScreenActivity.this)
                 .withFullScreen()
                 .withSplashTimeOut(2000)
-                .withBackgroundColor(Color.WHITE)
-                .withLogo(R.mipmap.ic_launcher_round);
+                .withLogo(R.drawable.ic_hr)
+                .withAfterLogoText(getString(R.string.app_splash_after_logo))
+                .withBackgroundColor(Color.WHITE);
 
-        Boolean isFirstLunch = checkAppStatus();
-        if (isFirstLunch) {
+        Boolean isFirstLaunch = checkAppStatus();
+        if (isFirstLaunch) {
             easySplashScreen.withTargetActivity(WelcomeActivity.class);
         } else {
             SharedPreferences sharedPreferences = getSharedPreferences(getString(R.string.app_data), MODE_PRIVATE);
@@ -38,6 +39,6 @@ public class SplashScreenActivity extends AppCompatActivity {
 
     private Boolean checkAppStatus() {
         SharedPreferences sharedPreferences = getSharedPreferences(getString(R.string.app_data), MODE_PRIVATE);
-        return sharedPreferences.getBoolean(getString(R.string.app_data_first_lunch), true);
+        return sharedPreferences.getBoolean(getString(R.string.app_data_first_launch), true);
     }
 }

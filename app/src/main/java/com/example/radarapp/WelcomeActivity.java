@@ -70,7 +70,7 @@ public class WelcomeActivity extends AppCompatActivity {
     private void editAppStatus() {
         SharedPreferences sharedPreferences = getSharedPreferences(getString(R.string.app_data), MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putBoolean(getString(R.string.app_data_first_lunch), false);
+        editor.putBoolean(getString(R.string.app_data_first_launch), false);
         editor.commit();
     }
 }

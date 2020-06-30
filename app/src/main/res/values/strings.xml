@@ -34,10 +34,12 @@
 
     <string name="app_name">RadarApp</string>
     <string name="app_data">AppData</string>
-    <string name="app_data_first_lunch">FirstLunch</string>
+    <string name="app_data_first_launch">FirstLaunch</string>
     <string name="app_data_username">Username</string>
     <string name="app_data_pwd">Password</string>
     <string name="app_data_user_is_doctor">IsDoctor</string>
+
+    <string name="app_splash_after_logo">Heart Radar</string>
 
 
     <string name="TARGET_DEVICE_NAME">Heart Radar</string>
