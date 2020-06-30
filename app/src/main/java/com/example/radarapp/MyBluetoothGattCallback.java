@@ -11,7 +11,7 @@ import android.os.Message;
 import android.widget.Toast;
 
 class MyBluetoothGattCallback extends BluetoothGattCallback {
-    private MainActivityDoctor app;
+    private MainActivity app;
     private BleConnection appBleConnection;
 
     void setAppBleConnection(BleConnection appBleConnection) {
@@ -20,7 +20,7 @@ class MyBluetoothGattCallback extends BluetoothGattCallback {
 
     private ConnectionToolbox connectionToolbox = ConnectionToolbox.getInstance();
 
-    MyBluetoothGattCallback(MainActivityDoctor app) {
+    MyBluetoothGattCallback(MainActivity app) {
         this.app = app;
     }
 

@@ -41,7 +41,7 @@ import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
 
-public class MainActivityDoctor extends AppCompatActivity {
+public class MainActivityDoctor extends MainActivity {
     class UpdateDataTimerTask extends TimerTask {
         UpdateDataTimerTask() {
             // Get the display data buffer.
