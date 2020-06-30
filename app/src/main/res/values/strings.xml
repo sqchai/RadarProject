@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">RadarApp</string>
+    <string name="app_data">AppData</string>
+    <string name="app_data_first_lunch">FirstLunch</string>
 </resources>
