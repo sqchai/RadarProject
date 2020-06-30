@@ -24,7 +24,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         if (isFirstLunch) {
             easySplashScreen.withTargetActivity(WelcomeActivity.class);
         } else {
-            easySplashScreen.withTargetActivity(MainActivity.class);
+            easySplashScreen.withTargetActivity(MainActivityDoctor.class);
         }
 
         setContentView(easySplashScreen.create());

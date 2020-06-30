@@ -5,4 +5,11 @@
     <color name="colorAccent">#03DAC5</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="colorGray">#808080</color>
+
+
+    <color name="FRAME_BGCOlOR">#EEEEEE</color>
+    <color name="WAVE_BGCOLOR">#FFFFFF</color>
+    <color name="WAVE_COLOR1">#0072BD</color>
+    <color name="WAVE_COLOR2">#D95319</color>
+    <color name="LABELS_COLOR">#000000</color>
 </resources>

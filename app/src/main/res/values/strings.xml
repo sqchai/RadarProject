@@ -1,8 +1,103 @@
 <resources>
+    <integer name="MAX_FREQ">5000</integer>
+    <integer name="MIN_FREQ">500</integer>
+    <integer name="TIMEOUT">5000</integer>
+    <integer name="LIST_DATABUF_SIZE">500</integer>
+    <integer name="SAVE_DATABUF_SIZE">30000</integer>
+    <integer name="MENUITEM_CHANGE_FREQUENCY">0</integer>
+
+    <integer name="MENUITEM_ABOUT_ME">1</integer>
+    <!-- The minimum frequency can be changed. -->
+    <integer name="PERMISSION_REQUEST_CODE">0</integer>
+    <!-- The timeout of waiting for the transmission. (Unit: millisecond) -->
+    <integer name="BLE_ENABLE_REQUEST_CODE">0</integer>
+
+    <integer name="MSG_SYSTEM_RESET">0</integer>
+    <!-- 100 * 60 * 5 = 30000 -->
+    <integer name="MSG_UPDATE_WAVES">1</integer>
+
+    <integer name="MSG_SET_FREQSEEKBAR_MAX">2</integer>
+    <integer name="MSG_SET_FREQSEEKBAR_PROGRESS">3</integer>
+
+    <integer name="MSG_ENABLE_WIDGETS">4</integer>
+    <integer name="MSG_UPDATE_curFreqRangeTextView">5</integer>
+
+    <integer name="MSG_UPDATE_curFreqTextView">6</integer>
+
+    <integer name="MSG_UPDATE_EditTexts">7</integer>
+    <integer name="MSG_START">8</integer>
+    <integer name="MSG_STOP">9</integer>
+
+    <integer name="MSG_AUTO_CALC">10</integer>
+    <integer name="MSG_UPDATE_IP">11</integer>
+    <integer name="CONNECT_BLE_REQUEST_CODE">0</integer>
+
     <string name="app_name">RadarApp</string>
     <string name="app_data">AppData</string>
     <string name="app_data_first_lunch">FirstLunch</string>
     <string name="app_data_username">Username</string>
     <string name="app_data_pwd">Password</string>
+
     <string name="app_data_default_ip">DefaultIP</string>
+    <string name="TARGET_DEVICE_NAME">Heart Radar</string>
+    <string name="TARGET_DEVICE_SERVICE_UUID">6E400001-B5A3-F393-E0A9-E50E24DCCA9E</string>
+    <string name="TARGET_DEVICE_WRITE_UUID">6E400002-B5A3-F393-E0A9-E50E24DCCA9E</string>
+    <string name="TARGET_DEVICE_READ_UUID">6E400003-B5A3-F393-E0A9-E50E24DCCA9E</string>
+    <string name="wifiSsidTextView">Wi-Fi SSID</string>
+    <string name="wifiPwdTextView">Wi-Fi Password</string>
+    <string name="wifiSubmitButton">Submit Wi-Fi Information</string>
+
+    <!--    <string name="defaultIP">192.168.137.166</string>-->
+    <string name="iDiffWavePanelTitle">I Differential</string>
+
+    <!--    <string name="titleTextView">ADF4351 Frequency Controller</string>-->
+    <string name="iPosNegWavePanel">I Positive and Negative</string>
+    <string name="QDiffWavePanelTitle">Q Differential</string>
+
+    <string name="QPosNegWavePanel">Q Positive and Negative</string>
+    <string name="ecgWavePanel">ECG Channel</string>
+
+    <string name="ipTextView">Target IP</string>
+    <string name="csTextView">Chip Sel</string>
+
+    <string name="r0TextView">REG 0</string>
+    <string name="r1TextView">REG 1</string>
+    <string name="r2TextView">REG 2</string>
+    <string name="r3TextView">REG 3</string>
+    <string name="r4TextView">REG 4</string>
+    <string name="r5TextView">REG 5</string>
+
+    <string name="defaultFillText">0</string>
+
+    <string name="titleTextView">Heart Radar Frequency Viewer</string>
+    <string name="connMethodTextView">Connection Method: Unknown</string>
+    <string name="bleMethodButton">Bluetooth</string>
+    <string name="wifiMethodButton">Wi-Fi</string>
+
+    <string name="curFreqTextViewDefault">Current Freq: 1800 MHz (Not Applied)</string>
+    <string name="curFreqRangeTextView">(Slider Range: 1000 ~ 2600 MHz)</string>
+    <string name="leftButton">Left</string>
+    <string name="intervalTextDefault">10</string>
+
+    <string name="rightButton">Right</string>
+
+    <string name="setAsMinButton">Set Min</string>
+    <string name="setAsFreqButton">Set Freq</string>
+    <string name="setAsMaxButton">Set Max</string>
+    <string name="curPowerButton">Current Power: +5 dBm</string>
+    <string name="plus5PopupMenuItem">+5 dBm</string>
+    <string name="plus2PopupMenuItem">+2 dBm</string>
+    <string name="minus1PopupMenuItem">-1 dBm</string>
+    <string name="minus4PopupMenuItem">-4 dBm</string>
+    <string name="startButton">Start</string>
+    <string name="stopButton">Stop</string>
+    <string name="resetButton">Reset All</string>
+    <string name="autoCalcButton">Auto Calc</string>
+
+    <string name="backToChartsButton">Back To Charts</string>
+    <string name="BLE_CONN_TITLE">Select a heart radar device to connect</string>
+    <string name="bluetoothStatusTextView">Ready to scan</string>
+    <string name="scanBleButton">Scan / Refresh</string>
+
+    <string name="bluetoothDevicesTextView">There\'s no heart radar device nearby.</string>
 </resources>

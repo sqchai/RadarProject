@@ -49,7 +49,7 @@ public class WelcomeActivity extends AppCompatActivity {
                 editor.putString(getString(R.string.app_data_default_ip), defaultIP);
                 editor.commit();
 
-                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                Intent intent = new Intent(getApplicationContext(), MainActivityDoctor.class);
                 intent.putExtra("isDoc", isDoctor);
                 intent.putExtra("ip", defaultIP);
                 startActivity(intent);

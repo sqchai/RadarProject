@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/plus5PopupMenuItem"
+            android:title="@string/plus5PopupMenuItem" />
+    <item
+            android:id="@+id/plus2PopupMenuItem"
+            android:title="@string/plus2PopupMenuItem" />
+    <item
+            android:id="@+id/minus1PopupMenuItem"
+            android:title="@string/minus1PopupMenuItem" />
+    <item
+            android:id="@+id/minus4PopupMenuItem"
+            android:title="@string/minus4PopupMenuItem" />
+
+</menu>
