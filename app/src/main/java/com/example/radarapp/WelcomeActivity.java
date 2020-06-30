@@ -14,7 +14,6 @@ public class WelcomeActivity extends AppCompatActivity {
 
     EditText editTextUsername;
     EditText editTextPassword;
-    EditText editTextDefaultIP;
     Switch switchIsDoctor;
     Button buttonDone;
 
@@ -25,7 +24,6 @@ public class WelcomeActivity extends AppCompatActivity {
 
         editTextUsername = findViewById(R.id.editTextUsername);
         editTextPassword = findViewById(R.id.editTextPassword);
-        editTextDefaultIP = findViewById(R.id.editTextIp);
         switchIsDoctor = findViewById(R.id.doctor_switch);
         buttonDone = findViewById(R.id.button_done);
 
@@ -39,20 +37,26 @@ public class WelcomeActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String username = editTextUsername.getText().toString();
                 String password = editTextPassword.getText().toString();
-                String defaultIP = editTextDefaultIP.getText().toString();
                 Boolean isDoctor = switchIsDoctor.isChecked();
 
                 SharedPreferences sharedPreferences = getSharedPreferences(getString(R.string.app_data), MODE_PRIVATE);
                 SharedPreferences.Editor editor = sharedPreferences.edit();
                 editor.putString(getString(R.string.app_data_username), username);
                 editor.putString(getString(R.string.app_data_pwd), password);
-                editor.putString(getString(R.string.app_data_default_ip), defaultIP);
+                editor.putBoolean(getString(R.string.app_data_user_is_doctor), isDoctor);
                 editor.commit();
 
-                Intent intent = new Intent(getApplicationContext(), MainActivityDoctor.class);
-                intent.putExtra("isDoc", isDoctor);
-                intent.putExtra("ip", defaultIP);
+                Intent intent;
+                if(isDoctor) {
+                    intent = new Intent(getApplicationContext(), MainActivityDoctor.class);
+                } else {
+                    intent = new Intent(getApplicationContext(), MainActivityClient.class);
+                }
+
                 startActivity(intent);
+
+                //prevent the user from coming back to this activity
+                finish();
             }
         });
     }

@@ -24,7 +24,13 @@ public class SplashScreenActivity extends AppCompatActivity {
         if (isFirstLunch) {
             easySplashScreen.withTargetActivity(WelcomeActivity.class);
         } else {
-            easySplashScreen.withTargetActivity(MainActivityDoctor.class);
+            SharedPreferences sharedPreferences = getSharedPreferences(getString(R.string.app_data), MODE_PRIVATE);
+            Boolean isDoctor = sharedPreferences.getBoolean(getString(R.string.app_data_user_is_doctor), true);
+            if (isDoctor) {
+                easySplashScreen.withTargetActivity(MainActivityDoctor.class);
+            } else {
+                easySplashScreen.withTargetActivity(MainActivityClient.class);
+            }
         }
 
         setContentView(easySplashScreen.create());

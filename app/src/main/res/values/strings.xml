@@ -37,8 +37,9 @@
     <string name="app_data_first_lunch">FirstLunch</string>
     <string name="app_data_username">Username</string>
     <string name="app_data_pwd">Password</string>
+    <string name="app_data_user_is_doctor">IsDoctor</string>
 
-    <string name="app_data_default_ip">DefaultIP</string>
+
     <string name="TARGET_DEVICE_NAME">Heart Radar</string>
     <string name="TARGET_DEVICE_SERVICE_UUID">6E400001-B5A3-F393-E0A9-E50E24DCCA9E</string>
     <string name="TARGET_DEVICE_WRITE_UUID">6E400002-B5A3-F393-E0A9-E50E24DCCA9E</string>

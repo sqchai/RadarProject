@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".WelcomeActivity">
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
     <EditText
         android:id="@+id/editTextUsername"
         android:layout_width="200dp"
@@ -29,15 +40,6 @@
         app:layout_constraintStart_toStartOf="@id/editTextUsername"
         app:layout_constraintTop_toBottomOf="@id/editTextUsername" />
 
-    <EditText
-        android:id="@+id/editTextIp"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:hint="Default IP"
-        android:textSize="25dp"
-        app:layout_constraintStart_toStartOf="@id/editTextUsername"
-        app:layout_constraintTop_toBottomOf="@id/editTextPassword" />
-
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="50dp"
@@ -45,14 +47,6 @@
         app:layout_constraintEnd_toStartOf="@id/editTextUsername"
         app:layout_constraintTop_toTopOf="@id/editTextUsername"
         app:srcCompat="@drawable/ic_baseline_person_24" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:layout_constraintEnd_toStartOf="@id/editTextIp"
-        app:layout_constraintTop_toTopOf="@id/editTextIp"
-        app:srcCompat="@drawable/ic_baseline_wifi_24" />
 
     <Switch
         android:id="@+id/doctor_switch"
@@ -63,7 +57,7 @@
         android:textSize="20dp"
         android:textColor="@color/colorAccent"
         app:layout_constraintStart_toStartOf="@id/imageView"
-        app:layout_constraintTop_toBottomOf="@id/editTextIp" />
+        app:layout_constraintTop_toBottomOf="@id/editTextPassword" />
 
     <Button
         android:id="@+id/button_done"
@@ -76,4 +70,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/doctor_switch" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
