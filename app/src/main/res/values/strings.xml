@@ -2,4 +2,7 @@
     <string name="app_name">RadarApp</string>
     <string name="app_data">AppData</string>
     <string name="app_data_first_lunch">FirstLunch</string>
+    <string name="app_data_username">Username</string>
+    <string name="app_data_pwd">Password</string>
+    <string name="app_data_default_ip">DefaultIP</string>
 </resources>
